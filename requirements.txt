@@ -1,0 +1,15 @@
+# Installed by setup.ps1. PyTorch is installed separately so the script can
+# pick the CUDA build when an NVIDIA GPU is present and the CPU build otherwise.
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+scipy==1.18.1
+statsmodels==0.15.0
+scikit-learn==1.9.1
+requests==2.34.2
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+matplotlib==3.11.2
+pytest==9.1.1
+httpx==0.28.1

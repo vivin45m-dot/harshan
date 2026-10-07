@@ -1,0 +1,24 @@
+# local toolchain and caches (setup.ps1 recreates these)
+.tools/
+.cache/
+.venv/
+.scratch/
+frontend/node_modules/
+frontend/dist/
+
+# raw downloads and the ledger database (pipeline.ps1 recreates these)
+data/raw/
+# data/processed/ is committed: it is small, and rebuilding it means
+# re-downloading 163 months from a rate-limited API.
+data/ledger.sqlite3
+
+# trained models and results are kept small enough to commit, so they are
+# not ignored; delete artifacts/ and rerun the pipeline to reproduce them.
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# Office lock files
+~$*
